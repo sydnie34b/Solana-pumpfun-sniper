@@ -114,7 +114,7 @@ export const onBundleResult = (c: SearcherClient): Promise<number> => {
         }
       },
       (e: any) => {
-        // Do not reject the promise here
+        console.log('error with axios')
       }
     )
   })
