@@ -21,7 +21,7 @@ export const monitor = async (poolId: PublicKey) => {
         console.log("error in fetching price of pool", e)
       }
     })()
-  }, 2000)
+  }, 3000)
 }
 
 export const clearMonitor = () => {
