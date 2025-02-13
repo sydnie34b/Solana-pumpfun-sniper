@@ -22,9 +22,9 @@ export const getMetaData = async (
       return false;
     }
 
+    const metaData = (await fetch(deserialize[0].uri)).json();
     const deserialize = serializer.deserialize(metadataAccount.data);
     // console.log("🚀 ~ deserialize:", deserialize)
-    const metaData = (await fetch(deserialize[0].uri)).json();
     return metaData;
   } catch (error) {
     return false;
